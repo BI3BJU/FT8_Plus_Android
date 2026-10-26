@@ -1,4 +1,4 @@
-# FT8 Plus for Android
+# FT8 Plus for Android Protocol Demo
 
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue.svg)](LICENSE.txt)
 [![Platform](https://img.shields.io/badge/Platform-Android-green.svg)](#)
