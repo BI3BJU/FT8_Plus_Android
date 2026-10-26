@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Eight ANSI colors: the only color resources allowed in the project. -->
+    <color name="ansi_black">#FF000000</color>
+    <color name="ansi_red">#FF800000</color>
+    <color name="ansi_green">#FF008000</color>
+    <color name="ansi_yellow">#FF808000</color>
+    <color name="ansi_blue">#FF000080</color>
+    <color name="ansi_purple">#FF800080</color>
+    <color name="ansi_teal">#FF008080</color>
+    <color name="ansi_white">#FFFFFFFF</color>
+</resources>

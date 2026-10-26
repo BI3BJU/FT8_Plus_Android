@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FT8 Plus</string>
+
+    <!-- ===== 顶部栏 ===== -->
+    <string name="utc_time_placeholder">---- -- -- --:--:-- UTC</string>
+    <string name="led_receive">接收</string>
+    <string name="led_transmit">发射</string>
+    <string name="btn_callsign_anonymous">呼号</string>
+    <string name="btn_contacts">联系人</string>
+    <string name="btn_about">关于</string>
+
+    <!-- ===== 发射区 ===== -->
+    <string name="hint_tx_message">输入消息 (最多574字节)</string>
+    <string name="btn_transmit">发射</string>
+    <string name="btn_stop">停止</string>
+    <string name="label_bytes_empty">字节：0</string>
+    <string name="label_bytes_count">字节：%1$d/%2$d</string>
+    <string name="label_frames_count">帧数：%1$d</string>
+    <string name="label_free_text">自由文本（i3=0）</string>
+    <string name="label_single_frame">单帧</string>
+    <string name="label_frequency">频率（Hz）：</string>
+    <string name="label_frequency_range">（300-3000）</string>
+    <string name="label_noise">前导噪声</string>
+    <string name="beacon">信标</string>
+    <string name="tx_placeholder">最多 574 个 UTF-8 字节。</string>
+
+    <!-- ===== 状态区 ===== -->
+    <string name="status_waiting">等待同步...</string>
+
+    <!-- ===== 标记类型 ===== -->
+    <string name="marker_unknown">未知</string>
+    <string name="marker_continuous">连续帧</string>
+    <string name="marker_single">单独帧</string>
+    <string name="marker_beacon">信标</string>
+    <string name="marker_free_text">自由文本</string>
+
+    <!-- ===== 历史显示 ===== -->
+    <string name="history_status_receiving">接收中</string>
+    <string name="history_status_crc_ok">校验完整</string>
+    <string name="history_status_crc_fail">校验失败</string>
+    <string name="history_status_timeout">接收超时</string>
+    <string name="history_status_sending">发送中</string>
+    <string name="history_status_done">发送完毕</string>
+    <string name="history_status_interrupted">中断</string>
+    <string name="history_progress_rx">已接收 %1$d 帧 %2$d 字节</string>
+    <string name="history_progress_tx">[%1$d/%2$d 帧] [%3$d/%4$d 字节]</string>
+
+    <!-- ===== 对话框通用 ===== -->
+    <string name="dlg_ok">确定</string>
+    <string name="dlg_cancel">取消</string>
+    <string name="dlg_save">保存</string>
+    <string name="dlg_delete">删除</string>
+    <string name="dlg_new">新建</string>
+    <string name="dlg_edit">修改</string>
+    <string name="dlg_choose_action">选择操作</string>
+
+    <!-- ===== Toast 消息 ===== -->
+    <string name="toast_record_permission_denied">录音权限被拒绝，无法解码 FT8 信号</string>
+    <string name="toast_permissions_granted">所有权限已授予</string>
+    <string name="toast_tx_in_progress">已在发射中，忽略本次请求</string>
+    <string name="toast_msg_empty">消息不能为空</string>
+    <string name="toast_msg_too_long">消息超过 %1$d 字节</string>
+    <string name="toast_too_many_frames">帧数超过 %1$d</string>
+    <string name="toast_free_text_encode_failed">自由文本编码失败</string>
+    <string name="toast_tx_failed">发射失败: %1$s</string>
+    <string name="toast_tx_error">发送异常: %1$s</string>
+    <string name="toast_invalid_callsign_format">呼号格式无效：3~7位，1~2前缀+数字+0~4字母，前缀至少一字母</string>
+    <string name="toast_invalid_callsign">呼号格式无效</string>
+    <string name="toast_set_callsign_first">请先设置本台呼号</string>
+    <string name="toast_start_receiver_first">请先启动接收器</string>
+    <string name="toast_select_contact_first">请先选择联系人</string>
+    <string name="toast_invalid_selection">无效选择</string>
+    <string name="toast_callsign_empty">呼号不能为空</string>
+    <string name="toast_callsign_exists">该呼号已存在</string>
+    <string name="toast_added">已添加</string>
+    <string name="toast_updated">已更新</string>
+    <string name="toast_deleted">已删除</string>
+    <string name="toast_contacts_limit">联系人已达上限 %1$d 条</string>
+    <string name="toast_fix_callsign_first">本台呼号格式无效，请先修改呼号</string>
+    <string name="toast_copied">已复制</string>
+    <string name="toast_nothing_to_copy">没有内容可复制</string>
+    <string name="toast_pasted">已粘贴</string>
+    <string name="toast_clipboard_empty">剪贴板为空</string>
+    <string name="toast_cleared">已清除</string>
+    <string name="toast_history_copied">已复制全部历史</string>
+    <string name="toast_history_empty">历史区为空</string>
+    <string name="toast_history_cleared">历史区已清除</string>
+    <string name="toast_status_copied">已复制全部状态</string>
+    <string name="toast_status_empty">状态区为空</string>
+    <string name="toast_status_cleared">状态区已清除</string>
+    <string name="toast_time_synced">时间已校准 (偏差 %1$.3f s)</string>
+    <string name="toast_ntp_failed">NTP 同步失败，使用系统时间</string>
+    <string name="toast_save_contacts_failed">保存联系人失败</string>
+
+    <!-- ===== 呼号对话框 ===== -->
+    <string name="dlg_callsign_title">修改呼号</string>
+    <string name="dlg_callsign_hint">格式: 3~7位，1~2前缀+数字+0~4字母，前缀至少一字母</string>
+    <string name="dlg_callsign_valid">✓ 正确</string>
+    <string name="dlg_callsign_invalid">✗ 格式无效（3~7位，前缀至少一字母，含数字）</string>
+
+    <!-- ===== 联系人对话框 ===== -->
+    <string name="dlg_contacts_title">联系人</string>
+    <string name="dlg_contacts_all">全部</string>
+    <string name="dlg_contacts_add_title">新增联系人</string>
+    <string name="dlg_contacts_edit_title">修改联系人</string>
+    <string name="dlg_contacts_delete_title">删除联系人</string>
+    <string name="dlg_contacts_delete_msg">确定要删除 %1$s 吗？</string>
+    <string name="dlg_hint_callsign">呼号</string>
+    <string name="dlg_hint_remark">备注</string>
+
+    <!-- ===== 历史对话框 ===== -->
+    <string name="dlg_history_title">历史操作</string>
+    <string name="dlg_history_copy_all">复制</string>
+    <string name="dlg_history_clear">清除</string>
+
+    <!-- ===== 状态区长按菜单 ===== -->
+    <string name="dlg_status_title">状态操作</string>
+
+    <!-- ===== 输入框长按对话框 ===== -->
+    <string name="dlg_input_copy">复制</string>
+    <string name="dlg_input_paste">粘贴</string>
+    <string name="dlg_input_clear">清除</string>
+
+    <!-- ===== 存入联系人对话框 ===== -->
+    <!-- ===== 关于对话框 ===== -->
+    <string name="about_title">关于</string>
+    <string name="about_content">FT8 Plus for Android
+
+版本: 1.0.261026
+作者: BI3BJU
+
+功能说明:
+- 实时解码 FT8 信号（需要录音权限）
+- 自定义文本透明发射（最多574字节，自动分帧）
+- 支持多帧连续传输（i3=6, f2=1）
+- 15秒时隙自动解码
+- 联系人管理
+- 呼号格式：3~7位，1~2前缀+数字+0~4字母，前缀至少一字母
+- 收到任何 RX 消息即自动保存源呼号到联系人（源需符合呼号规则）
+- 收到自身呼号时历史区加下划线显示（文字颜色保持分类色）
+- 联系人最多100条，备注最大32字节
+- 前导噪声（noise）功能：每帧发射前提前1秒播放白噪声+静默（可通过复选框开关）
+- 发射时历史区实时显示 Sending... 状态
+- 信标功能：每16个时隙（240秒）发射位置信标（呼号 + 8位梅登海德网格，编码为13个Base42字符），接收识别为信标并显示呼号
+- NTP时间同步：启动时自动校准内部时间（cn.pool.ntp.org / pool.ntp.org），不修改系统时间
+- 历史日志和状态日志持久化（精简JSON + 纯文本），自动保留最新100条
+
+固定参数：
+- 周期 15 秒；采样率 12000 Hz；符号率 6.25；HPS=4；BPT=2。
+- 每跳 0.04 秒；每符号 0.160 秒；每周期 375 跳；两周期 750 跳。
+- 发射频率 300~3000 Hz；默认 1500 Hz；步进 6.25 Hz。
+- 最大原始数据 574 字节；最多 64 帧；频率分组容差 ±10 Hz；合并延迟 4 个时隙（60 秒）。
+
+持久化文件：
+- config.txt：呼号、发射频率、前导噪声。
+- contact.txt：联系人，每行一个 呼号,备注。
+- history.txt：历史，JSON Lines。
+- status.txt：状态日志，纯文本。
+
+注意：本应用仅用于业余无线电 FT8 模式实验。</string>
+
+    <!-- ===== 状态消息 ===== -->
+    <string name="status_preamble_noise_on">前导噪声 启用</string>
+    <string name="status_preamble_noise_off">前导噪声 禁用</string>
+    <string name="status_callsign_updated">呼号已修改为: %1$s</string>
+    <string name="status_invalid_callsign_ignored">尝试保存无效呼号，忽略保存</string>
+    <string name="status_beacon_on">信标已开启：%1$s</string>
+    <string name="status_beacon_off">信标已关闭</string>
+    <string name="status_beacon_exception">信标异常: %1$s</string>
+    <!-- 自动添加联系人备注格式 -->
+    <string name="contact_auto_remark_fmt">自动添加于 %1$s</string>
+
+    <string name="status_auto_saved_contact">自动存入联系人: %1$s</string>
+    <string name="status_src_callsign_invalid">源呼号 %1$s 不符合规则，不存入联系人</string>
+    <string name="status_ntp_sync_ok">NTP 同步成功 (服务器 %1$s)，偏差 %2$.3f 秒</string>
+    <string name="status_ntp_sync_fail">NTP 同步失败，继续使用系统时间</string>
+    <string name="status_audio_device_lost">⚠ 音频输入设备失效，请检查麦克风</string>
+    <string name="status_audio_device_recovered">音频输入设备已恢复</string>
+    <string name="status_recording_started">录音线程已启动</string>
+    <string name="status_recording_stopped">录音线程已停止</string>
+    <string name="status_recording_stopped_beacon">录音线程已停止，信标已关闭</string>
+    <string name="status_recording_ok">录音正常</string>
+    <string name="status_recording_restart">录音异常，尝试重启</string>
+
+    <string name="status_tx_wait_slot">等待时隙... %1$.1f s</string>
+    <string name="status_tx_wait_next_slot">发射完成，等待 %1$.1f s 到时隙开始切回接收</string>
+    <string name="status_tx_wait_slot_end">发射完成，等待 %1$.1f s 到时隙结束切回接收</string>
+    <string name="status_tx_cancelled_wait">发射被用户取消（等待时隙时）</string>
+    <string name="status_tx_cancelled_noise">发射被取消（噪声前导时）</string>
+    <string name="status_tx_start">发射开始，总帧数=%1$d</string>
+    <string name="status_noise_interrupted">噪声播放中断</string>
+    <string name="status_tx_done">发射完成</string>
+    <string name="status_tx_cancelled">发射被用户取消</string>
+    <string name="status_tx_in_progress_ignored">已在发射中，忽略本次请求</string>
+
+    <string name="status_split_frames">透传数据分为 %1$d 帧</string>
+    <string name="status_single_frame_mode">单帧模式：f2=0，0x20 填充，无 CRC8/EOT</string>
+    <string name="status_multi_frame_mode">多帧模式：f2=1，每帧 9 字节</string>
+    <string name="status_payload_formula">载荷 = 原始 + 0x20 填充 + CRC8 + EOT(0x04)</string>
+
+    <string name="status_rx_freq_progress">RX 频率 %1$dHz 已收 %2$d 帧</string>
+    <string name="status_rx_done">RX 完成 频率 %1$dHz 帧数 %2$d CRC=%3$s</string>
+    <string name="status_rx_timeout">RX 超时 频率 %1$dHz 已收 %2$d 帧</string>
+    <string name="status_rx_new_session">RX 新会话 频率 %1$dHz</string>
+    <string name="status_rx_single_done">RX 单帧完成</string>
+
+    <string name="status_free_text">自由文本: %1$s (i3=0)</string>
+    <string name="status_free_text_done">自由文本发送成功</string>
+    <string name="status_free_text_cancelled">自由文本发送被取消</string>
+
+    <string name="status_tx_log_fmt">[TX] i3:6 %1$dHz | f2=%2$d  frame=%3$d/%4$d  b72=0x%5$s</string>
+
+    <string name="status_rx_empty_msg">(空消息)</string>
+    <string name="status_rx_empty_data">[空数据]</string>
+    <string name="status_rx_no_data">No data</string>
+
+    <string name="suffix_tx_interrupted">[发送中断]</string>
+    <string name="suffix_tx_exception">[异常]</string>
+    <string name="suffix_tx_fail">[发送失败]</string>
+    <!-- ===== 位置 ===== -->
+    <string name="status_location_fetching">正在获取位置...</string>
+    <string name="toast_location_invalid">系统返回无效位置</string>
+    <string name="toast_location_unavailable">系统定位服务不可用</string>
+    <string name="toast_location_permission_denied">位置权限被拒绝，无法获取位置</string>
+    <string name="toast_location_timeout">定位请求超时</string>
+    <string name="toast_location_opened">已在地图中打开位置</string>
+    <string name="toast_location_open_failed">没有可用的地图应用</string>
+    <string name="frame_missing">[帧缺失]</string>
+    <string name="gui_grid">网格</string>
+    <string name="dlg_set_grid">设置网格</string>
+    <string name="dlg_enter_grid">输入网格（8 位梅登海德）</string>
+    <string name="dlg_grid_format_hint">格式：8 字符，如 PL09aa01；可为空</string>
+    <string name="dlg_get_location">获取系统位置</string>
+    <string name="dlg_grid_empty_ok">（空）</string>
+    <string name="dlg_grid_invalid_hint">❌ 网格格式无效（8 字符）</string>
+    <string name="status_grid_updated">网格已更新：%1$s</string>
+    <string name="dlg_grid_required_beacon">请先设置网格（8 位梅登海德）再启动信标。</string>
+    </resources>
